@@ -1,0 +1,1 @@
+python tiles.py | sh
