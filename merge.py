@@ -10,4 +10,4 @@ def merge(qkey,level):
 	return qMerge([Image.open(k) if level==1 else merge(k,level-1) for k in keys])
 def merge_save(key,sublevel):
   merge(key,sublevel).save(key+'.jpg')
-merge_save('a1',3)
+merge_save('13211032013223',5)
