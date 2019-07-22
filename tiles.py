@@ -74,7 +74,7 @@ def qMerge(imgs):
 	w,h = imgs[0].size
 	ret,pos = Image.new( 'RGB',(w+w,h+h),255), [[0,0],[w,0],[0,h],[w,h]]
 	for i in range(4):
-		ret.paste( imgs[i],pos[i])
+		ret.paste( imgs[i],(pos[i][0],pos[i][1]))
 	return ret
 
 def merge(qkey,level):
