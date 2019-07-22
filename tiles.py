@@ -90,5 +90,10 @@ if( sys.argv[1] =='wget'):
 	getQKeyPics( latD,latM,latS, lonD,lonM,lonS,level,sub)
 if( sys.argv[1] == 'merge'):
 	merge(key,sub).save(key + '.jpg')
-#`awk '{printf "python tiles.py wget %s %s %s %s %s %s %s %s\n",$1,$2,$3,$4,$5,$6,$7,$8}' download.conf `
+# python tiles.py  wget 35 54 10 126 36 59 13 6 | sh
+# python tiles.py  merge 35 54 10 126 36 59 13 6
+# downloat.conf
+#35 54 10 126 36 59 13 6 
+# ......
+#`awk '{printf "python tiles.py wget %s %s %s %s %s %s %s %s\n",$1,$2,$3,$4,$5,$6,$7,$8}' download.conf ` | sh
 #`awk '{printf "python tiles.py merge %s %s %s %s %s %s %s %s\n",$1,$2,$3,$4,$5,$6,$7,$8}' download.conf `
